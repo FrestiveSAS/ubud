@@ -43,19 +43,21 @@
 
         /* Default settings for portrait orientation */
         .map-container {
-            top: 32%; /* Posisi atas relatif */
+            top: 30%; /* Posisi atas relatif */
             left: 10%; /* Posisi kiri relatif */
             width: 80%; /* Lebar relatif */
-            height: 55%; /* Tinggi relatif */
+            height: 50%; /* Tinggi relatif */
         }
 
         /* Media query for landscape orientation */
         @media screen and (min-aspect-ratio: 4/3) {
             .map-container {
                 top: 25%; /* Penyesuaian posisi untuk landscape */
-                left: 15%; /* Lebih kecil di kiri */
-                width: 70%; /* Lebar lebih kecil */
-                height: 50%; /* Tinggi lebih kecil */
+                left: 34%; /* Lebih kecil di kiri */
+				right: 34%;
+                width: 32%; /* Lebar lebih kecil */
+                height: 70%; /* Tinggi lebih kecil */
+				bottom : 24%;
             }
         }
     </style>
