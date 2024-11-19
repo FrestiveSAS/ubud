@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invitation with Map</title>
+    <title>Grand Opening Map</title>
     <style>
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             font-family: Arial, sans-serif;
-			background-color: #fdf2d0;
+            background-color: #fdf2d0;
         }
 
         .container {
@@ -18,63 +18,43 @@
             height: 100%;
             width: 100%;
         }
-        .page {
-            display: none;
-            height: 100%;
-            width: 100%;
-        }
-        .page.active {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+
         #page1 {
             background: url('FIX.png') no-repeat center center;
             background-size: contain;
+            position: relative;
+            height: 100%;
+            width: 100%;
         }
-        
-        .map-container {
-		position: absolute;
-		bottom: 40%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 100%; /* Ukuran default */
-		height: 100%; /* Ukuran default */
-		border: 2px solid #ccc;
-		border-radius: 10px;
-		overflow: hidden;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-		}
-		.map-overlay {
-		position: relative;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(255, 255, 255, 0.7);
-		padding: 20px;
-		border-radius: 10px;
-		text-align: center;
-		z-index: 2; /* Overlay berada di atas iframe */
-		}
 
+        .map-container {
+            position: absolute;
+            top: 21.57%; /* Posisi atas relatif */
+            left: 8.11%; /* Posisi kiri relatif */
+            width: 83.78%; /* Lebar relatif */
+            height: 56.86%; /* Tinggi relatif */
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
     </style>
 </head>
 <body>
-
-        <!-- Page 1 -->
-        <div class="container" id="page1">
-            <div class="map-container">
-			    <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.519203606624!2d115.24778597483991!3d-8.519296488969197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2235ddfd17a65%3A0x4ebd7808e2e8b3f9!2sJl.%20Raya%20Tebongkang%20No.88B%2C%20Singakerta%2C%20Ubud%2C%20Gianyar%20Regency%2C%20Bali%2080571!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
-                    width="100%" 
-                    height="100%" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-	 </div>
+    <div class="container" id="page1">
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.519203606624!2d115.24778597483991!3d-8.519296488969197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2235ddfd17a65%3A0x4ebd7808e2e8b3f9!2sJl.%20Raya%20Tebongkang%20No.88B%2C%20Singakerta%2C%20Ubud%2C%20Gianyar%20Regency%2C%20Bali%2080571!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
+                allowfullscreen="" 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
     </div>
 </body>
