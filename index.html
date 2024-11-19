@@ -29,14 +29,10 @@
             align-items: center;
         }
         #page1 {
-            background: url('1.png') no-repeat center center;
-            background-size: contain;
-        }
-        #page2 {
-            position: relative;
             background: url('2.png') no-repeat center center;
             background-size: contain;
         }
+        
         .map-container {
 		position: absolute;
 		top: 70%;
@@ -99,14 +95,8 @@
     </style>
 </head>
 <body>
-    <div class="container">
         <!-- Page 1 -->
-        <div class="page active" id="page1">
-			<button class="button" onclick="goToPage(2)">Next</button>
-        </div>
-
-        <!-- Page 2 -->
-        <div class="page" id="page2">
+        <div class="container" id="page1">
             <div class="map-container">
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.519203606624!2d115.24778597483991!3d-8.519296488969197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2235ddfd17a65%3A0x4ebd7808e2e8b3f9!2sJl.%20Raya%20Tebongkang%20No.88B%2C%20Singakerta%2C%20Ubud%2C%20Gianyar%20Regency%2C%20Bali%2080571!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
@@ -117,7 +107,7 @@
                     loading="lazy"
 					referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
-		<div class="map-overlay">
+				<div class="map-overlay">
                 <h1>Event Location</h1>
                 <p>
                     Grand Opening - 9th Store<br>
@@ -125,8 +115,7 @@
                     <strong>Start Time:</strong> 10:00 WITA
                 </p>
                 </div>
-            </div>
-          <button class="button prev" onclick="goToPage(1)">Previous</button>
+			    </div>
         </div>
     </div>
 
